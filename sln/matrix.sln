@@ -26,7 +26,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_matrix", "test\test_matrix.vcxproj", "{ADBF76C7-2FED-39EF-AA4D-13511BABA05B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BAD366E4-ECCF-3749-8913-F0EFC0A77097} = {BAD366E4-ECCF-3749-8913-F0EFC0A77097}
-		{64DC54AE-DD16-3D4A-AAD2-B5FCF9BAF4AE} = {64DC54AE-DD16-3D4A-AAD2-B5FCF9BAF4AE}
 	EndProjectSection
 EndProject
 Global
