@@ -184,13 +184,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-matrix_BINARY_DIR:STATIC=C:/GitHub_Repos/mp2-lab2-matrix/sln
+matrix_BINARY_DIR:STATIC=C:/GitHub_Repos/mp2-lab2-matrix/sln/include
 
 //Value Computed by CMake
-matrix_IS_TOP_LEVEL:STATIC=ON
+matrix_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-matrix_SOURCE_DIR:STATIC=C:/GitHub_Repos/mp2-lab2-matrix
+matrix_SOURCE_DIR:STATIC=C:/GitHub_Repos/mp2-lab2-matrix/include
 
 
 ########################
@@ -277,7 +277,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
