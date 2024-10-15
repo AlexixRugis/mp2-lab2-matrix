@@ -236,7 +236,7 @@ public:
         return res;
     }
 
-    T operator*(const TDynamicVector& v) noexcept(noexcept(T()))
+    T operator*(const TDynamicVector& v)
     {
         if (sz != v.sz)
         {
@@ -302,20 +302,35 @@ public:
     using TDynamicVector<TDynamicVector<T>>::operator[];
     using TDynamicVector<TDynamicVector<T>>::size;
 
+    T& at(size_t i, size_t j)
+    {
+        if (i >= sz || j >= sz)
+        {
+            throw logic_error("Indices should be less than matrix size");
+        }
+
+        return pMem[i][j];
+    }
+
+    const T& at(size_t i, size_t j) const
+    {
+        if (i >= sz || j >= sz)
+        {
+            throw logic_error("Indices should be less than matrix size");
+        }
+
+        return pMem[i][j];
+    }
+
     // сравнение
     bool operator==(const TDynamicMatrix& m) const noexcept
     {
-        if (sz != m.sz)
-        {
-            throw logic_error("Matrices sizes should be equal");
-        }
-
         return TDynamicVector<TDynamicVector<T>>::operator==(m);
     }
 
-    bool operator!=(const TDynamicMatrix& m)
+    bool operator!=(const TDynamicMatrix& m) const noexcept
     {
-        return !operator==(m);
+        return TDynamicVector<TDynamicVector<T>>::operator!=(m);
     }
 
     // матрично-скалярные операции

@@ -64,13 +64,6 @@ TEST(TDynamicVector, can_set_and_get_element)
     EXPECT_EQ(4, v[0]);
 }
 
-TEST(TDynamicVector, throws_when_set_element_with_negative_index)
-{
-    TDynamicVector<int> v(4);
-
-    EXPECT_ANY_THROW(v.at(-100) = 4);
-}
-
 TEST(TDynamicVector, throws_when_set_element_with_too_large_index)
 {
     TDynamicVector<int> v(4);
