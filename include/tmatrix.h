@@ -129,7 +129,7 @@ public:
             throw out_of_range("Index should be less than sz of TDynamicVector");
         }
 
-        return at[ind];
+        return pMem[ind];
     }
 
     const T& at(size_t ind) const
@@ -139,7 +139,7 @@ public:
             throw out_of_range("Index should be less than sz of TDynamicVector");
         }
 
-        return at[ind];
+        return pMem[ind];
     }
 
     // сравнение
@@ -158,7 +158,7 @@ public:
             }
         }
 
-        return false;
+        return true;
     }
 
     bool operator!=(const TDynamicVector& v) const noexcept
