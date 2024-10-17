@@ -2,5 +2,6 @@ C:/GitHub_Repos/mp2-lab2-matrix/sln/CMakeFiles/ALL_BUILD.dir
 C:/GitHub_Repos/mp2-lab2-matrix/sln/CMakeFiles/ZERO_CHECK.dir
 C:/GitHub_Repos/mp2-lab2-matrix/sln/include/CMakeFiles/matrix.dir
 C:/GitHub_Repos/mp2-lab2-matrix/sln/samples/CMakeFiles/sample_matrix.dir
+C:/GitHub_Repos/mp2-lab2-matrix/sln/samples/CMakeFiles/sample_matrix_operations.dir
 C:/GitHub_Repos/mp2-lab2-matrix/sln/gtest/CMakeFiles/gtest.dir
 C:/GitHub_Repos/mp2-lab2-matrix/sln/test/CMakeFiles/test_matrix.dir

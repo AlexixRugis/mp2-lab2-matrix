@@ -198,3 +198,24 @@ TEST(TDynamicMatrix, cant_multiply_matrices_with_not_equal_size)
     TDynamicMatrix<int> m(2), m2(3);
     EXPECT_ANY_THROW(m * m2);
 }
+
+TEST(TDynamicMatrix, can_multiply_matrix_and_vector)
+{
+    TDynamicMatrix<int> m(2);
+    m[0][0] = 12; m[0][1] = 4;
+    m[1][0] = 4; m[1][1] = 1;
+    TDynamicVector<int> v(2);
+    v[0] = 1; v[1] = 2;
+
+    EXPECT_NO_THROW(v = m * v);
+    EXPECT_EQ(v[0], 20);
+    EXPECT_EQ(v[1], 6);
+}
+
+TEST(TDynamicMatrix, cant_multiply_matrix_and_vector_with_not_equal_size)
+{
+    TDynamicMatrix<int> m(2);
+    TDynamicVector<int> v(3);
+
+    EXPECT_ANY_THROW(m * v);
+}
